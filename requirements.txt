@@ -1,0 +1,8 @@
+flask
+flask-cors
+Pillow
+numpy
+gradio==3.50.2
+datadog_api_client
+psycopg2-binary
+python-jose[cryptography]
