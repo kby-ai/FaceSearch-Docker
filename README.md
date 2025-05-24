@@ -18,7 +18,7 @@
 
 # FaceSearch-Docker
 ## Overview
-This repository demonstrates our face search SDK derived from `KBY-AI`'s [face recognition server SDK](https://hub.docker.com/r/kbyai/face-recognition) by implementing the functionalities to register face  and search face from database(`PostgreSQL`).<br/>
+This repository demonstrates our `face search SDK` derived from `KBY-AI`'s [face recognition server SDK](https://hub.docker.com/r/kbyai/face-recognition) by implementing the functionalities to register face  and search face from database(`PostgreSQL`).<br/>
 This repo offers APIs to enroll face, to search face, to see database, to clear database. And every API can be customized by updating [app.py](https://github.com/kby-ai/FaceSearch-Docker/blob/main/app.py) file accordingly.</br>
 
 > In this repo, we integrated `KBY-AI`'s face recognition solution into `Linux Server SDK` by docker container.<br/>
