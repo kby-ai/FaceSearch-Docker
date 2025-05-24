@@ -18,8 +18,8 @@
 
 # FaceSearch-Docker
 ## Overview
-This repository demonstrates an advanced face recognition technology by implementing face comparison based on face feature extraction and face matching algorithm, which was implemented via a `Dockerized Flask API`.<br/>
-It includes features that allow for testing face recognition between two images using both image files and `base64-encoded` images.
+This repository demonstrates our face search SDK derived from `KBY-AI`'s [face recognition server SDK](https://hub.docker.com/r/kbyai/face-recognition) by implementing the functionalities to register face  and search face from database(`PostgreSQL`).<br/>
+This repo offers APIs to enroll face, to search face, to see database, to clear database. And every API can be customized by updating `app.py` file accordingly.</br>
 
 > In this repo, we integrated `KBY-AI`'s face recognition solution into `Linux Server SDK` by docker container.<br/>
 > We can customize the SDK to align with customer's specific requirements.
