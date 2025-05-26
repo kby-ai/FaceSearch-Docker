@@ -24,39 +24,22 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 > In this repo, we integrated `KBY-AI`'s face recognition solution into `Linux Server SDK` by docker container.<br/>
 > We can customize the SDK to align with customer's specific requirements.
 
-### ◾FaceSDK(Server) Details
-  | Face Liveness Detection      | 🔽 Face Recognition |
-  |------------------|------------------|
-  | Face Detection        | <b>Face Detection</b>    |
-  | Face Liveness Detection        | <b>Face Recognition(Face Matching or Face Comparison)</b>    |
-  | Pose Estimation        | <b>Pose Estimation    |
-  | 68 points Face Landmark Detection        | <b>68 points Face Landmark Detection</b>    |
-  | Face Quality Calculation        | <b>Face Occlusion Detection</b>        |
-  | Face Occlusion Detection        | <b>Face Occlusion Detection</b>        |
-  | Eye Closure Detection        | <b>Eye Closure Detection</b>       |
-  | Mouth Opening Check        | <b>Mouth Opening Check</b>        |
-
 ### ◾FaceSDK(Server) Product List
   | No.      | Repository | SDK Details |
   |------------------|------------------|------------------|
   | 1        | [Face Liveness Detection - Linux](https://github.com/kby-ai/FaceLivenessDetection-Docker)    | Face Livness Detection |
   | 2        | [Face Liveness Detection - Windows](https://github.com/kby-ai/FaceLivenessDetection-Windows)    | Face Livness Detection |
   | 3        | [Face Liveness Detection - C#](https://github.com/kby-ai/FaceLivenessDetection-CSharp-.Net)    | <b>Face Livness Detection |
-  | ➡️        | <b>[Face Recognition - Linux](https://github.com/kby-ai/FaceRecognition-Docker)</b>    | <b>Face Recognition</b> |
+  | 4        | [Face Recognition - Linux](https://github.com/kby-ai/FaceRecognition-Docker)    | Face Recognition |
   | 5        | [Face Recognition - Windows](https://github.com/kby-ai/FaceRecognition-Windows)    | Face Recognition |
   | 6        | [Face Recognition - C#](https://github.com/kby-ai/FaceRecognition-CSharp-.NET)    | Face Recognition |
+  | ➡️        | <b>[Face Search - Linux](https://github.com/kby-ai/FaceSearch-Docker)</b>    | <b>Face Search</b> |
 
 > To get Face SDK(mobile), please visit products [here](https://github.com/kby-ai/Product):<br/>
 
 ## Try the API
-### Online Demo
-  You can test the SDK using images from the following URL:
-  https://web.kby-ai.com
-  
-  ![image](https://github.com/kby-ai/FaceRecognition-Docker/assets/125717930/a7aa607c-8c40-4ef0-9592-7332c97457ca)
-  
-### Postman
-  To test the API, you can use `Postman`. Here are the endpoints for testing:
+### Postman Endpoints
+  To test the `API`, you can use `Postman`. Here are the endpoints for testing:
   - Test with an image file: Send a POST request to `http://18.221.33.238:8081/compare_face`.
   - Test with a `base64-encoded` image: Send a POST request to `http://18.221.33.238:8081/compare_face_base64`.
 
@@ -186,10 +169,6 @@ This project uses `KBY-AI`'s `Face Recognition Server SDK`, which requires a lic
     | Mouth opening (0 ~ 1)       | float    | mouth_opened |
     | 68 points facial landmark        | float [68 * 2]    | landmarks_68 |
     | Face templates        | unsigned char [2048]    | templates |
-  
-    > 68 points facial landmark
-    
-    <img src="https://user-images.githubusercontent.com/125717930/235560305-ee1b6a39-5dab-4832-a214-732c379cabfd.png" width=500/>
 
 ### 3. APIs
   - Face Detection
