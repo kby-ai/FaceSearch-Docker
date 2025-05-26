@@ -54,7 +54,7 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 ## SDK License
 
 `Face Search SDK` requires a license per machine.</br>
-- The code below shows how to use the license: https://github.com/kby-ai/FaceRecognition-Docker/blob/5c6bdaff0e8154d6c6472ac9faf9158c6a6e7b47/app.py#L26-L36
+- The code below shows how to use the license: https://github.com/kby-ai/FaceSearch-Docker/blob/main/app.py#L33-L45
 
 - To request the license, please provide us with the `machine code` obtained from the `getMachineCode` function.
 
