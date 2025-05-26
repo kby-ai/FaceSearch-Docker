@@ -40,18 +40,20 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 ## Try the API
 ### Postman Endpoints
   To test the `API`, you can use `Postman`. Here are the endpoints for testing:
-  - Test with an image file: Send a POST request to `http://18.221.33.238:8081/compare_face`.
-  - Test with a `base64-encoded` image: Send a POST request to `http://18.221.33.238:8081/compare_face_base64`.
+  #### Enrolling Face
 
-    You can download the `Postman` collection to easily access and use these endpoints. [click here](https://github.com/kby-ai/FaceRecognition-Docker/tree/main/postman/kby-ai-face.postman_collection.json)
-    
+  #### Searching Face
+
+  #### Viewing Data Enrolled
+
+  #### Clearing Database
+  - Test with an image file: Send a POST request to `http://18.221.33.238:8081/compare_face`.    
     ![image](https://github.com/kby-ai/FaceRecognition-Docker/assets/125717930/dce48454-6d41-46f0-9623-b26bec103616)
 
 
 ## SDK License
 
-This project uses `KBY-AI`'s `Face Recognition Server SDK`, which requires a license per machine.
-
+`Face Search SDK` requires a license per machine.</br>
 - The code below shows how to use the license: https://github.com/kby-ai/FaceRecognition-Docker/blob/5c6bdaff0e8154d6c6472ac9faf9158c6a6e7b47/app.py#L26-L36
 
 - To request the license, please provide us with the `machine code` obtained from the `getMachineCode` function.
