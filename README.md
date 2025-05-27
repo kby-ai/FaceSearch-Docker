@@ -98,18 +98,10 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
   - Send us the `machine code` and then we will give you a license key.
   
     After that, update the `license.txt` file by overwriting the license key that you received. Then, run the `Docker` container again.
-    
-    ![image](https://github.com/kby-ai/FaceRecognition-Docker/assets/125717930/d7e84054-e4da-42c4-a88f-e74d50387d92)
-    
-    ![image](https://github.com/kby-ai/FaceRecognition-Docker/assets/125717930/7988b167-17dd-4501-8168-871954a1c8ec)
 
-  - To test the API, you can use `Postman`. Here are the endpoints for testing:
-
-    Test with an image file: Send a POST request to `http://{xx.xx.xx.xx}:8081/compare_face`.
+    ![image](https://github.com/user-attachments/assets/cb3590a3-2f68-4e68-8ae2-21522a222abc)
     
-    Test with a `base64-encoded` image: Send a POST request to `http://{xx.xx.xx.xx}:8081/compare_face_base64`.
-    
-    You can download the `Postman` collection to easily access and use these endpoints. [click here](https://github.com/kby-ai/FaceRecognition-Docker/tree/main/postman/kby-ai-face.postman_collection.json)
+    ![image](https://github.com/user-attachments/assets/dd8e2ba2-2121-43e0-b8d9-fa0c2b10dc70)
 
 ## About SDK
 
