@@ -47,8 +47,9 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 3. `http://<your-base-url>/user_list`</br>
   This `API` shows all data enrolled on database(`PostgreSQL`).</br>
 4. `http://<your-base-url>/remove_all`</br>
-  This `API` remove all data from database.<br> 
-  ![image](https://github.com/kby-ai/FaceRecognition-Docker/assets/125717930/dce48454-6d41-46f0-9623-b26bec103616)
+  This `API` removes all data from database.<br>
+
+  ![image](https://github.com/user-attachments/assets/ca670eb8-3f86-468b-a7ba-d6ab6dedffaf)
 
 ## SDK License
 
