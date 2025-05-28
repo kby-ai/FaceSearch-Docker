@@ -68,20 +68,20 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 ## How to run
 
 ### 1. System Requirements
-  - CPU: 2 cores or more (Recommended: 2 cores)
-  - RAM: 4 GB or more (Recommended: 8 GB)
-  - HDD: 4 GB or more (Recommended: 8 GB)
-  - OS: Ubuntu 20.04 or later
-  - Dependency: OpenVINO™ Runtime (Version: 2022.3)
+  - `CPU`: `2` cores or more (Recommended: `2` cores)
+  - `RAM`: `4GB` or more (Recommended: `8GB`)
+  - `HDD`: `4GB` or more (Recommended: `8GB`)
+  - `OS`: `Ubuntu 20.04` or later
+  - Dependency: `OpenVINO™` Runtime (Version: `2022.3`)
 
 ### 2. Setup and Test
   - Clone the project:
     ```bash
-    git clone https://github.com/kby-ai/FaceRecognition-Docker.git
+    git clone https://github.com/kby-ai/FaceSearch-Docker.git
     ```
   - Download the model from Google Drive: [click here](https://drive.google.com/file/d/1ExXnc-QMVCFtGoP3xOkjoQFq56hO0PV0/view?usp=sharing)
     ```bash
-    cd FaceRecognition-Docker
+    cd FaceSearch-Docker
     
     wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=19vA7ZOlo19BcW8v4iCoCGahUEbgKCo48' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=19vA7ZOlo19BcW8v4iCoCGahUEbgKCo48" -O data.zip && rm -rf /tmp/cookies.txt
     
@@ -89,18 +89,19 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
     ```
   - Build the `Docker` image:
     ```bash
-    sudo docker build --pull --rm -f Dockerfile -t kby-ai-face:latest .
+    sudo docker build --pull --rm -f Dockerfile -t kby-ai-face-search:latest .
     ```
+  - Get `machine code`
+    ```bash
+    sudo docker run -e LICENSE="xxxxx" kby-ai-face-search:latest
+    ```
+  - Send us the `machine code` obtained.
+    ![image](https://github.com/user-attachments/assets/cb3590a3-2f68-4e68-8ae2-21522a222abc)
+  - Update the `license.txt` file by overwriting the license key that you received from `KBY-AI` team.
   - Run the `Docker` container:
     ```bash
-    sudo docker run -v ./license.txt:/home/openvino/kby-ai-face/license.txt -p 8081:8080 kby-ai-face
+    sudo docker run -v ./license.txt:/root/kby-ai-face/license.txt -p 8081:8080 -p 9001:9000 kby-ai-face-search:latest
     ```
-  - Send us the `machine code` and then we will give you a license key.
-  
-    After that, update the `license.txt` file by overwriting the license key that you received. Then, run the `Docker` container again.
-
-    ![image](https://github.com/user-attachments/assets/cb3590a3-2f68-4e68-8ae2-21522a222abc)
-    
     ![image](https://github.com/user-attachments/assets/dd8e2ba2-2121-43e0-b8d9-fa0c2b10dc70)
 
 ## About SDK
@@ -164,7 +165,7 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
     | 68 points facial landmark        | float [68 * 2]    | landmarks_68 |
     | Face templates        | unsigned char [2048]    | templates |
 
-### 3. APIs
+### 3. Main Functions
   - Face Detection
   
     The `Face SDK` provides a single API for detecting faces, determining `face orientation` (yaw, roll, pitch), assessing `face quality`, detecting `facial occlusion`, `eye closure`, `mouth opening`, and identifying `facial landmarks`.
