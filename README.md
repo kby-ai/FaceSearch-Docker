@@ -216,5 +216,5 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 
 ### 4. Thresholds
   The default thresholds are as the following below:
-  https://github.com/kby-ai/FaceRecognition-Docker/blob/75800590cd9f2a3b778ec176bf465d1a731278fa/app.py#L18-L20
+  https://github.com/kby-ai/FaceSearch-Docker/blob/df84c977b2f78d82c9c3b630f0e6ae5f1885ca57/app.py#L22-L24
 
