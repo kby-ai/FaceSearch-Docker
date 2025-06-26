@@ -13,7 +13,6 @@ COPY ./facebox.py .
 COPY ./app.py .
 COPY ./demo.py .
 COPY ./run.sh .
-COPY ./face_examples ./face_examples
 COPY ./requirements.txt .
 COPY ./data ./data
 COPY ./FaceManage ./FaceManage
