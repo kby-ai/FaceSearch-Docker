@@ -39,7 +39,7 @@ This repo offers APIs to enroll face, to search face, to see database, to clear 
 
 ## Try the API
 ### Postman Endpoints
-  To test the `API`, you can use `Postman`. Here are the [endpoints](https://github.com/kby-ai/FaceSearch-Docker/blob/18a68f0c97e02a598bcafd6c8df6da2448a29d40/kby-ai-facesearch.postman_collection.json) for testing:
+  To test the `API`, you can use `Postman`. Here are the [endpoints](https://github.com/kby-ai/FaceSearch-Docker/blob/main/kby-ai-facesearch.postman_collection.json) for testing:
 1. `http://<your-base-url>/register`</br>
   This `API` enrolls face data from image base64 format and save it to database(`PostgreSQL`)</br>
 2. `http://<your-base-url>/search`</br>
