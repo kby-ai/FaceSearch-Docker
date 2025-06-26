@@ -342,9 +342,9 @@ def user_list():
 @app.route("/remove_user", methods=['POST'])
 def remove_user():
     content = request.get_json()
-    name = content['name']
+    name, SiteID = content['face_id'], content['collection_id']
 
-    db_manage.remove_user(name)
+    db_manage.remove_user(name, SiteID)
     response = jsonify({"status": "success"})
     response.status_code = 200
     response.headers["Content-Type"] = "application/json; charset=utf-8"
@@ -409,7 +409,7 @@ def verify_user():
         response.headers["Content-Type"] = "application/json; charset=utf-8"
         return response
     
-    response = jsonify({"status": result, "person_id": imageids, "similarity_detected": str(face_score)})
+    response = jsonify({"status": result, "person_id": imageids, "similarity_detected": str(face_score), "face_id": name})
     response.status_code = 200
     response.headers["Content-Type"] = "application/json; charset=utf-8"
     return response
