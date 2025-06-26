@@ -184,14 +184,14 @@ def search_faces(feat, ConfidenceThreshold):
     if len(sorted_score_list) == 0:
         return -1, None, None, None
     else:
-        return 0, sorted_name_list[0], sorted_score_list, sorted_source_image_id_list
+        return 0, sorted_name_list, sorted_score_list, sorted_source_image_id_list
 
 # Get user list
 def get_userlist():
     return [(data['id'], data['source_image_id'], data['SiteID']) for data in data_all]
 
 # Remove a user
-def remove_user(name):
+def remove_user(name, _):
     global face_database, data_all
     cursor = face_database.cursor()
     cursor.execute(postgres_delete_user, (name,))
